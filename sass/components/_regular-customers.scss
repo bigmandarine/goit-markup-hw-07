@@ -21,12 +21,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--white-color);
-  border: 1px solid var(--social-color);
-  border-radius: 4px;
   width: 170px;
   height: 92px;
   padding: 0px;
+  background-color: var(--white-color);
+  border: 1px solid var(--social-color);
+  border-radius: 4px;
 
   transition-property: border;
   transition-duration: 250ms;

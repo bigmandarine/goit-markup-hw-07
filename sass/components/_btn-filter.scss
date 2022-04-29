@@ -12,7 +12,7 @@
 .button-filter-text {
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.62;
+  line-height: 1.63;
   color: #212121;
 
   transition-property: color;
@@ -25,12 +25,13 @@
 }
 
 .button-filter {
-  background-color: var(--nav-button-color);
+  line-height: 1.62;
+  padding: 6px 22px;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.62;
   color: #212121;
-  padding: 6px 22px;
+  background-color: var(--nav-button-color);
+
   border-radius: 4px;
   border: 1px solid var(--nav-button-color);
 
