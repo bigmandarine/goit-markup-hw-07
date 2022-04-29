@@ -8,7 +8,7 @@
 .logo {
   font-size: 26px;
   line-height: 1.17;
-  font-family: Raleway;
+  font-family: $logo-font;
   text-decoration: none;
   letter-spacing: 0.03em;
 }
@@ -19,15 +19,16 @@
   transition-property: color, background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    color: var(--accent-color);
+    background-color: var(--h1-section-and-footer-color);
+  }
+  &:focus {
+    color: var(--accent-color);
+    background-color: var(--h1-section-and-footer-color);
+  }
 }
-.footer__logo-accent:hover {
-  color: var(--accent-color);
-  background-color: var(--h1-section-and-footer-color);
-}
-.footer__logo-accent:focus {
-  color: var(--accent-color);
-  background-color: var(--h1-section-and-footer-color);
-}
+
 .footer__logo {
   display: block;
 
@@ -36,6 +37,14 @@
   transition-property: color, background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    color: var(--white-color);
+    background-color: var(--h1-section-and-footer-color);
+  }
+  &:focus {
+    color: var(--white-color);
+    background-color: var(--h1-section-and-footer-color);
+  }
 }
 .footer__logo-white {
   color: var(--white-color);
@@ -43,14 +52,7 @@
 .footer__logo-link {
   color: inherit;
 }
-.footer__logo:hover {
-  color: var(--white-color);
-  background-color: var(--h1-section-and-footer-color);
-}
-.footer__logo:focus {
-  color: var(--white-color);
-  background-color: var(--h1-section-and-footer-color);
-}
+
 .footer-list-contacts {
   padding-left: 0px;
   margin-bottom: 0px;
@@ -73,20 +75,19 @@
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.footer-list-contacts {
-  margin-top: 9px;
-}
-.footer-list-contacts li:nth-child(2n) {
-  margin-top: 9px;
-}
-.contacts-footer {
   &:hover,
   &:focus {
     color: var(--accent-color);
     background-color: var(--h1-section-and-footer-color);
   }
 }
+.footer-list-contacts {
+  margin-top: 9px;
+  & li:nth-child(2n) {
+    margin-top: 9px;
+  }
+}
+
 .footer-social {
   margin-left: 70px;
 }
@@ -119,7 +120,7 @@
 .footer-social-text {
   margin: 0px;
   color: var(--white-color);
-  font-family: Roboto;
+  font-family: $base-font;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;

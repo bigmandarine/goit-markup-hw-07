@@ -64,29 +64,16 @@ button[type='button']:hover {
   line-height: 1.17;
   font-family: Raleway;
   text-decoration: none;
-
-  transition-property: background-color, color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms var(--timing-function);
 }
 .header-logo__black {
   color: var(--black-text-color);
 }
-.logo__link:hover {
-  color: var(--black-text-color);
-  background-color: var(--white-color);
-}
-.logo__link:focus {
-  color: var(--black-text-color);
-  background-color: var(--white-color);
-}
+
 .header-logo__accent {
   color: var(--accent-color);
 }
-.logo__accent:hover {
-  color: var(--accent-color);
-  background-color: var(--white-color);
-}
+
 /* ---------------------------------- Кнопки навигации сайта ---------------------------------- */
 .site-nav__list {
   display: flex;
@@ -375,6 +362,33 @@ button[type='button']:hover {
   margin-bottom: 30px;
   text-transform: uppercase;
 }
+.hero__button,
+.btn {
+  display: inline-block;
+  background-color: var(--accent-color);
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  width: 200px;
+  color: var(--white-color);
+  letter-spacing: 0.06em;
+  padding: 10px 0;
+  border-radius: 4px;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  transition-property: color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn--hover:hover,
+.btn--hover:focus {
+  background-color: var(--button-hover-blue);
+  color: var(--white-color);
+  cursor: pointer;
+}
 
 /* ---------------------------------- Модальное окно начало ---------------------------------- */
 
@@ -567,33 +581,6 @@ button[type='button']:hover {
 }
 
 /* ---------------------------------- Модальное окно конец ---------------------------------- */
-.hero__button,
-.btn {
-  display: inline-block;
-  background-color: var(--accent-color);
-  font-family: inherit;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  width: 200px;
-  color: var(--white-color);
-  letter-spacing: 0.06em;
-  padding: 10px 0;
-  border-radius: 4px;
-  border: none;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  text-align: center;
-  transition-property: color, background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.btn--hover:hover,
-.btn--hover:focus {
-  background-color: var(--button-hover-blue);
-  color: var(--white-color);
-  cursor: pointer;
-}
 
 /* ---------------------------------- Наши преимущества ---------------------------------- */
 
@@ -644,7 +631,7 @@ li > p {
 
 /* ---------------------------------- Чем мы занимаемся ---------------------------------- */
 
-.section.what-we-do {
+.section--what-we-do {
   padding-top: 0px;
 }
 .what-we-do__title {
@@ -695,7 +682,7 @@ li > p {
 
 /* ---------------------------------- Наша команда ---------------------------------- */
 
-.our-team {
+.section--our-team {
   background-color: var(--our-team-color);
 }
 
@@ -728,7 +715,7 @@ li > p {
   padding-top: 30px;
   padding-bottom: 30px;
 }
-.our-team__title {
+.our-team__name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -738,7 +725,7 @@ li > p {
   margin: 0px;
   margin-bottom: 10px;
 }
-.our-team__subtitle {
+.our-team__work {
   font-size: 16px;
   line-height: 1.18;
   text-align: center;

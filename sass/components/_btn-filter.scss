@@ -4,16 +4,11 @@
   margin-top: 0px;
   margin-bottom: 50px;
   padding-left: 0px;
-}
-.button-section .button-list:not(:last-child) {
-  margin-right: 8px;
-}
-.button-filter-text {
-  &:hover,
-  &:focus {
-    color: var(--white-color);
+  & .button-list:not(:last-child) {
+    margin-right: 8px;
   }
 }
+
 .button-filter-text {
   font-weight: 500;
   font-size: 16px;
@@ -23,6 +18,10 @@
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--white-color);
+  }
 }
 
 .button-filter {
@@ -38,8 +37,6 @@
   transition-property: background-color, color, box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.button-filter {
   &:hover,
   &:focus {
     background-color: var(--accent-color);
