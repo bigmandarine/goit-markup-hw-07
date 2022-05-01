@@ -191,32 +191,18 @@ button[type='button']:hover {
 
 /* ---------------------------------- Портфолио - кнопки филтры ---------------------------------- */
 
-.button-section {
+.projects_menu-list {
   display: flex;
   justify-content: center;
   margin-top: 0px;
   margin-bottom: 50px;
   padding-left: 0px;
 }
-.button-section .button-list:not(:last-child) {
+.projects_menu-list .projects_menu-item:not(:last-child) {
   margin-right: 8px;
 }
-.button-filter-text:hover,
-.button-filter-text:focus {
-  color: var(--white-color);
-}
-.button-filter-text {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  color: #212121;
 
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.button-filter {
+.projects_menu-btn {
   background-color: var(--nav-button-color);
   font-weight: 500;
   font-size: 16px;
@@ -230,8 +216,8 @@ button[type='button']:hover {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.button-filter:hover,
-.button-filter:focus {
+.projects_menu-btn:hover,
+.projects_menu-btn:focus {
   background-color: var(--accent-color);
   color: var(--white-color);
   border: none;
@@ -265,7 +251,7 @@ button[type='button']:hover {
     1px 4px 6px rgba(0, 0, 0, 0.16);
   transform: translatex(0);
 }
-.portfolio-img-hover {
+.portfolio_text--hover {
   position: relative;
   overflow: hidden;
 }
@@ -301,7 +287,7 @@ button[type='button']:hover {
 }
 
 /* 1px solid var(--border-header-color); */
-.portfolio__item-text {
+.portfolio__content {
   padding-left: 24px;
   padding-right: 24px;
   padding-top: 20px;
@@ -316,7 +302,7 @@ button[type='button']:hover {
 .portfolio__list .portfolio__item:nth-child(n + 7) {
   margin-bottom: 0px;
 }
-.portfolio-h3 {
+.portfolio_title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -324,7 +310,7 @@ button[type='button']:hover {
   margin-bottom: 4px;
   margin-top: 0px;
 }
-.portfolio-text {
+.portfolio_subtitle {
   font-size: 16px;
   line-height: 1.87;
   color: var(--grey-text-color);
@@ -884,19 +870,19 @@ li > p {
   color: var(--white-color);
   background-color: var(--h1-section-and-footer-color);
 }
-.footer-list-contacts {
+.footer_contacts-list {
   padding-left: 0px;
   margin-bottom: 0px;
   margin-top: 0px;
 }
-.address {
+.footer_contacts {
   color: var(--white-color);
   font-size: 14px;
   line-height: 1.71;
   font-style: normal;
   letter-spacing: 0.03em;
 }
-.contacts-footer {
+.footer_contacts-link {
   font-size: 14px;
   line-height: 1.71;
   color: var(--footer-contacts-color);
@@ -907,23 +893,23 @@ li > p {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer-list-contacts {
+.footer_contacts-list {
   margin-top: 9px;
 }
-.footer-list-contacts li:nth-child(2n) {
+.footer_contacts-list li:nth-child(2n) {
   margin-top: 9px;
 }
-.contacts-footer:focus,
-.contacts-footer:hover {
+.footer_contacts-link:focus,
+.footer_contacts-link:hover {
   color: var(--accent-color);
   background-color: var(--h1-section-and-footer-color);
 }
-.footer-social {
+.footer_social {
   margin-left: 70px;
 }
-.footer-social-list,
-.footer-social-item,
-.our-team__link-social-footer {
+.footer_social-list,
+.footer_social-item,
+.footer_social-link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -934,17 +920,17 @@ li > p {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer-social-list {
+.footer_social-list {
   margin-top: 20px;
 }
-.our-team__link-social-footer:hover,
-.our-team__link-social-footer:focus {
+.footer_social-link:hover,
+.footer_social-link:focus {
   background-color: var(--accent-color);
 }
-.footer-social-list li + li {
+.footer_social-list li + li {
   margin-left: 10px;
 }
-.footer-social-text {
+.footer_social-title {
   margin: 0px;
   color: var(--white-color);
   font-family: Roboto;
@@ -954,7 +940,7 @@ li > p {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
-.our-team__link-social-footer {
+.footer_social-link {
   margin: 0px;
   width: 44px;
   height: 44px;

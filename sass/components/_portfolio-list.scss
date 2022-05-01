@@ -34,7 +34,7 @@
     transform: translatey(0);
   }
 }
-.portfolio-img-hover {
+.portfolio_text--hover {
   position: relative;
   overflow: hidden;
 }
@@ -66,7 +66,7 @@
 }
 
 /* 1px solid var(--border-header-color); */
-.portfolio__item-text {
+.portfolio__content {
   padding-left: 24px;
   padding-right: 24px;
   padding-top: 20px;
@@ -76,7 +76,7 @@
   border-bottom: 1px solid var(--botder-list-text);
 }
 
-.portfolio-h3 {
+.portfolio_title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -84,7 +84,7 @@
   margin-bottom: 4px;
   margin-top: 0px;
 }
-.portfolio-text {
+.portfolio_subtitle {
   margin-top: 0px;
   margin-bottom: 0px;
   font-size: 16px;

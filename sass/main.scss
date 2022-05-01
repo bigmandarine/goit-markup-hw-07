@@ -1,4 +1,5 @@
-@import './utils/variables'; // Базовые стили
+@import './utils/variables';
+@import './base/base-style';
 @import './components/header';
 @import './components/btn-filter';
 @import './components/hero';
