@@ -372,46 +372,44 @@
           <ul class="footer_social-list">
             <li class="footer_social-item">
               <a class="footer_social-link" href=""
-                ><svg class="our-team__image-social-footer">
+                ><svg class="footer_social-img">
                   <use href="./images/icons.svg#instagram"></use></svg
               ></a>
             </li>
             <li class="footer_social-item">
               <a class="footer_social-link" href=""
-                ><svg class="our-team__image-social-footer">
+                ><svg class="footer_social-img">
                   <use href="./images/icons.svg#twitter"></use></svg
               ></a>
             </li>
             <li class="footer_social-item">
               <a class="footer_social-link" href=""
-                ><svg class="our-team__image-social-footer">
+                ><svg class="footer_social-img">
                   <use href="./images/icons.svg#facebook"></use></svg
               ></a>
             </li>
             <li class="footer_social-item">
               <a class="footer_social-link" href=""
-                ><svg class="our-team__image-social-footer">
+                ><svg class="footer_social-img">
                   <use href="./images/icons.svg#linkedin"></use></svg
               ></a>
             </li>
           </ul>
         </div>
         <!-- Подписка на рассылку -->
-        <form class="subscription-newsletter">
-          <label class="subscription-newsletter-text" for="newsletter-input"
-            >Подпишитесь на рассылку</label
-          >
-          <div class="newsletter-table">
+        <form class="subscription">
+          <label class="subscription_title" for="newsletter-input">Подпишитесь на рассылку</label>
+          <div class="subscription_content">
             <input
-              class="subscription-newsletter-input"
+              class="subscription_input"
               type="text"
               name="E-mail"
               placeholder="E-mail"
               id="newsletter-input"
             />
-            <button type="submit" class="button-subscribe btn btn--hover">
+            <button type="submit" class="subscription_button btn btn--hover">
               Подписаться
-              <svg class="newsletter-button-icon" width="24px" height="24px">
+              <svg class="subscription_img" width="24px" height="24px">
                 <use href="./images/icons.svg#icon-send"></use>
               </svg>
             </button>
@@ -420,63 +418,68 @@
       </div>
     </footer>
     <!-- Модальное окно -->
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop backdrop--is-hiden" data-modal>
       <div class="modal">
-        <p class="modal-tittle">Оставьте свои данные, мы вам перезвоним</p>
-        <div class="modal-table">
-          <form class="form">
-            <div class="field-form">
-              <label class="label-title" for="name">Имя</label>
-              <div class="input-icon-box">
-                <input class="input" type="text" name="username" id="name" autofocus />
-                <svg class="input-icon" width="18px" height="18px">
+        <p class="modal_tittle">Оставьте свои данные, мы вам перезвоним</p>
+        <div class="modal_table">
+          <form class="modal_content">
+            <div class="modal_field">
+              <label class="modal_field-title" for="name">Имя</label>
+              <div class="modal_input-box">
+                <input class="modal_input" type="text" name="username" id="name" autofocus />
+                <svg class="modal_input-icon" width="18px" height="18px">
                   <use href="./images/icons.svg#person-black"></use>
                 </svg>
               </div>
             </div>
-            <div class="field-form">
-              <label class="label-title" for="telephone">Телефон</label>
-              <div class="input-icon-box">
-                <input class="input" type="text" name="telephone" id="telephone" />
-                <svg class="input-icon" width="18px" height="18px">
+            <div class="modal_field">
+              <label class="modal_field-title" for="telephone">Телефон</label>
+              <div class="modal_input-box">
+                <input class="modal_input" type="text" name="telephone" id="telephone" />
+                <svg class="modal_input-icon" width="18px" height="18px">
                   <use href="./images/icons.svg#phone-black"></use>
                 </svg>
               </div>
             </div>
-            <div class="field-form">
-              <label class="label-title" for="mail">Почта</label>
-              <div class="input-icon-box">
-                <input class="input" type="text" name="mail" id="mail" />
-                <svg class="input-icon" width="18px" height="18px">
+            <div class="modal_field">
+              <label class="modal_field-title" for="mail">Почта</label>
+              <div class="modal_input-box">
+                <input class="modal_input" type="text" name="mail" id="mail" />
+                <svg class="modal_input-icon" width="18px" height="18px">
                   <use href="./images/icons.svg#email-black"></use>
                 </svg>
               </div>
             </div>
-            <div class="field-form">
-              <label class="label-title" for="comment">Коментарий</label>
+            <div class="modal_field">
+              <label class="modal_field-title" for="comment">Коментарий</label>
               <textarea
-                class="text-comment input"
+                class="modal_comment"
                 placeholder="Введите текст"
                 name="comment"
                 id="comment"
               ></textarea>
             </div>
-            <div class="field-form checkbox-field">
-              <div class="checkbox-content">
-                <input class="checkbox-agree" type="checkbox" name="box-agree" id="box-agree" />
-                <svg class="checkbox-image" width="16px" height="15px">
+            <div class="modal_checkbox modal_field">
+              <div class="modal_checkbox-content">
+                <input
+                  class="modal_checkbox-input"
+                  type="checkbox"
+                  name="box-agree"
+                  id="box-agree"
+                />
+                <svg class="modal_checkbox-img" width="16px" height="15px">
                   <use href="./images/icons.svg#icon-check"></use>
                 </svg>
-                <label class="box-agree-text" for="box-agree"
+                <label class="modal_checkbox-text" for="box-agree"
                   >Соглашаюсь с рассылкой и принимаю
-                  <a href="" class="box-agree-link">Условия договора</a>
+                  <a href="" class="modal_checkbox-link">Условия договора</a>
                 </label>
               </div>
             </div>
-            <button type="submit" class="btn button-modal btn--hover">Отправить</button>
+            <button type="submit" class="btn modal_button btn--hover">Отправить</button>
           </form>
-          <button class="button-close" data-modal-close>
-            <svg class="button-image-close">
+          <button class="modal_button-close" data-modal-close>
+            <svg class="modal_button-close-img">
               <use href="./images/icons.svg#close-black"></use>
             </svg>
           </button>
